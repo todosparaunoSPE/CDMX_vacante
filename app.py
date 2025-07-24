@@ -22,8 +22,9 @@ st.set_page_config(page_title="Portafolio - Javier Pérez", page_icon="📊", la
 # -------------------------------------------------
 st.sidebar.title("Contacto")
 st.sidebar.markdown("""
-**Email:** jahoperi@gmail.com  
-**Teléfono:** +52 56 1056 4095
+**Email:** tu_correo@gmail.com  
+**LinkedIn:** [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)  
+**Teléfono:** +52 55 7425 5593
 """)
 
 # -------------------------------------------------
@@ -109,9 +110,9 @@ modelo.fit(X, y)
 # Predicciones
 y_pred = modelo.predict(X)
 
-# Calcular métricas
+# Calcular métricas (corregido para evitar error en Python 3.13)
 mae = mean_absolute_error(y, y_pred)
-rmse = mean_squared_error(y, y_pred, squared=False)
+rmse = mean_squared_error(y, y_pred) ** 0.5  # Calcular raíz manualmente
 r2 = r2_score(y, y_pred)
 
 # Mostrar métricas en DataFrame
