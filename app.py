@@ -22,9 +22,8 @@ st.set_page_config(page_title="Portafolio - Javier Pérez", page_icon="📊", la
 # -------------------------------------------------
 st.sidebar.title("Contacto")
 st.sidebar.markdown("""
-**Email:** tu_correo@gmail.com  
-**LinkedIn:** [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)  
-**Teléfono:** +52 55 7425 5593
+**Email:** jahoperi@gmail.com  
+**Teléfono:** +52 56 1056 4095
 """)
 
 # -------------------------------------------------
